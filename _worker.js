@@ -606,7 +606,7 @@ export default {
     }
 
     async function getNotificationContent() {
-      const response = await fetch('https://raw.githubusercontent.com/52Lxcloud/TGChatBot/refs/heads/master/CFTeleTrans/notification.md');
+      const response = await fetch('https://raw.githubusercontent.com/oachat/TGChatBot/refs/heads/master/CFTeleTrans/start.md');
       if (!response.ok) return '';
       const content = await response.text();
       return content.trim() || '';
